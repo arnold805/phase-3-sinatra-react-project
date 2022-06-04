@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_01_175223) do
+ActiveRecord::Schema.define(version: 2022_06_03_164515) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2022_06_01_175223) do
     t.string "link"
     t.string "image_url"
     t.integer "category_id"
+    t.integer "rating"
   end
 
 end
